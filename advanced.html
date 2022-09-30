@@ -11,22 +11,25 @@
     <div class="right">
         <a href="index.html">Google Search</a>
     </div>
-    <form action="https://www.google.com/search">
-        <input type="submit" value="Advanced Search">
-        <br>
-        <h3>Find pages with...</h3>
-        all these words:
-        <input type="text" name="as_q">
-        <br>
-        this exact word or phrase:
-        <input type="text" name="as_epq">
-        <br>
-        any of these words:
-        <input type="text" name="as_oq">
-        <br>
-        none of these words:
-        <input type="text" name="as_eq">
-    </form>
+    <p style="color:rgb(183, 12, 12); font-size: 25px; margin-left: 20px;">Advanced Search</p> <hr>
+    <h3 style="margin-left: 20px;">Find pages with...</h3>
+    <div class="adv">
+        <div class="adv-headers">
+            all these words: <br>
+            this exact word or phrase: <br>
+            any of these words: <br>
+            none of these words:
+        </div>
+        <div>
+            <form action="https://www.google.com/search">
+                <input class="adv-fields" type="text" name="as_q"> <br>
+                <input class="adv-fields" type="text" name="as_epq"> <br>
+                <input class="adv-fields" type="text" name="as_oq"> <br>
+                <input class="adv-fields" type="text" name="as_eq"> <br>
+                <input id="adv-sub" type="submit" value="Advanced Search">
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
