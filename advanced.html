@@ -11,25 +11,32 @@
     <div class="right">
         <a href="index.html">Google Search</a>
     </div>
-    <p style="color:rgb(183, 12, 12); font-size: 25px; margin-left: 20px;">Advanced Search</p> <hr>
-    <h3 style="margin-left: 20px;">Find pages with...</h3>
-    <div class="adv">
-        <div class="adv-headers">
-            all these words: <br>
-            this exact word or phrase: <br>
-            any of these words: <br>
-            none of these words:
-        </div>
-        <div>
-            <form action="https://www.google.com/search">
-                <input class="adv-fields" type="text" name="as_q"> <br>
-                <input class="adv-fields" type="text" name="as_epq"> <br>
-                <input class="adv-fields" type="text" name="as_oq"> <br>
-                <input class="adv-fields" type="text" name="as_eq"> <br>
-                <input id="adv-sub" type="submit" value="Advanced Search">
-            </form>
-        </div>
+    <p id="adv">Advanced Search</p> <hr>
+    <p id="find">Find pages with...</p>
+    <div class="container">
+        <form action="https://www.google.com/search">
+            <ul class="flex-outer">
+                <li>
+                    <label for="all">all these words: </label>
+                    <input id="all" type="text" name="as_q">
+                </li>
+                <li>
+                    <label for="exact">this exact word or phrase: </label>
+                    <input id="exact" type="text" name="as_epq">
+                </li>
+                <li>
+                    <label for="any">any of these words: </label>
+                    <input id="any" type="text" name="as_oq">
+                </li>
+                <li>
+                    <label for="none">none of these words: </label>
+                    <input id="none" type="text" name="as_eq">
+                </li>
+                <li>
+                    <button type="submit">Advanced Search</button>
+                </li>
+            </ul>
+        </form>
     </div>
-
 </body>
 </html>

@@ -29,27 +29,90 @@ img {
     margin: 2%;
 }
 
-.adv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+#adv {
+    font-size: 22px;
+    color: rgb(200, 31, 31);
+    margin-bottom: 40px;
 }
 
-.adv-headers {
-    margin-right: 40px;
-    margin-left: 20px;
-    line-height: 45px;
+#find {
+    font-size: 18px;
+    margin-top: 60px;
 }
 
-.adv-fields {
-    margin:10px;
-    width: 50%;
-    line-height: 20px;
+p {
+    margin-left: 40px;
 }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
+  
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 40px;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 4px;
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 8  px;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+  }
+  
+  .flex-inner li {
+    width: 100px;
+  }
 
-#adv-sub {
-    background-color: rgb(66 133 244);
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    background-color: rgb(66, 133, 244);
     color: white;
-    width: 20%;
-    margin: 10px;
-}
+    border: 0px;
+  }
