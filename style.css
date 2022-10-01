@@ -15,14 +15,15 @@
     padding: 12px 20px;
     margin: 6px 0;
     box-sizing: border-box;
-    border: 1px solid grey;
+    border: 1px solid whitesmoke
 }
 
 input[type=submit] {
     background-color: whitesmoke;
     width: 15%;
-    padding: 8px 16px;
+    padding: 8px 8px;
     border: 1px solid whitesmoke;
+    margin: 10px;
 }
 
 img {
